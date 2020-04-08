@@ -25,8 +25,11 @@ module.exports = {
   output: {
     filename: 'index.js',
     path: path.resolve(__dirname, 'build'),
-    library: 'MyLibrary',
+    library: 'Csv2Xlsx',
     libraryTarget: 'umd'
+  },
+  performance: {
+    hints: false
   },
   module: {
     rules: [

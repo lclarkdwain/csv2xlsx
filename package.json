@@ -1,7 +1,7 @@
 {
   "name": "csv2xlsx",
   "version": "1.0.0",
-  "description": "convert csv formatted string/text to xlsx file formated with download support",
+  "description": "convert csv formatted string/text to xlsx file formatted with download support for web",
   "main": "build/index.js",
   "scripts": {
     "build": "webpack",
@@ -13,8 +13,13 @@
     "type": "git",
     "url": "git+https://github.com/anullihate/csv2xlsx.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "csv",
+    "xlsx",
+    "csv-converter",
+    "csv-parser"
+  ],
+  "author": "anullihate",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/anullihate/csv2xlsx/issues"
@@ -43,5 +48,9 @@
       "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/scripts/testMock.js",
       "\\.(css|less)$": "<rootDir>/scripts/testMock.js"
     }
+  },
+  "dependencies": {
+    "papaparse": "^5.2.0",
+    "xlsx": "^0.15.6"
   }
 }
