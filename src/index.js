@@ -7,10 +7,9 @@ class Csv2Xlsx {
 
   download(source, destination) {
     Papa.parse(source, {
-      header: true,
       complete: function (results) {
         const wb = xlsx.utils.book_new();
-        const ws = xlsx.utils.json_to_sheet(results.data);
+        const ws = xlsx.utils.aoa_to_sheet(results.data);
         xlsx.utils.book_append_sheet(wb, ws);
         xlsx.writeFile(wb, destination);
       },
